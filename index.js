@@ -21,6 +21,7 @@ const DB = "mongodb+srv://wahyubudiprayogo8:Prayogo@cluster0.l8tusfu.mongodb.net
 app.use(express.json());
 app.use(authRouter);
 
+// Check if backend_api already connect to databases
 mongoose.connect(DB).then(()=>{
      console.log('MongoDB has Connected');
      
